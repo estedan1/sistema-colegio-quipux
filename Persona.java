@@ -1,6 +1,4 @@
-
-import java.util.Scanner;
-public class Persona {
+public class Persona{
     private String nombre;
     private String apellido;
     private int edad;
@@ -10,15 +8,9 @@ public class Persona {
         this.apellido = apellido;
         this.edad = edad;
     }
+
+    public Persona() {
+    }
 }
 
-public Persona (String nombre, String apellido, int edad){
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.edad = edad;
 
-public static void main(String []args)
-    Scanner sc= new Scanner(System.in);
-
-
-}
