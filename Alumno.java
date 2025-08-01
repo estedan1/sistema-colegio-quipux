@@ -1,38 +1,48 @@
+import java.util.Scanner;
 public class Alumno extends Persona {
-    private String TipoDeInteligencia;
-    private float iq;
+    public String nombre;
+    public String apellido;
+    public int edad;
+    private String tipoDeInteligencia;
+    private int iq;
     private String profesorEncargado;
 
-    public Alumno(String tipoDeInteligencia, float iq, String profesorEncargado) {
-        this.TipoDeInteligencia = tipoDeInteligencia;
+    public Alumno(String nombre, String apellido, int edad, String tipoDeInteligencia, int iq, String profesorEncargado) {
+        System.out.println("Se creo un nuevo Alumno " + nombre + " " + apellido + " " + edad + " " + tipoDeInteligencia + " " +  iq + " " + profesorEncargado);
+        super(nombre,apellido,edad);
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+        this.tipoDeInteligencia = tipoDeInteligencia;
         this.iq = iq;
         this.profesorEncargado = profesorEncargado;
     }
 
 
-public hacerTarea();{
-    boolean hacerLaTarea = sc.nextBoloean("hace la tarea?")
-     if (hacerLaTarea == true){
-         System.out.printLn("hizo la tarea");
-         tarea = i
-         if (i> 0)
-             nota=++nota;
-         if i == 0
-         System.out.printLn("imposible que no tengas tareas, ya las hiciste?");
-     }else{
-        System.out.printLn("no hizo la tarea, muy mal ");
-        tarea = i
-        if i<0 --nota;}
+    public void hacerTarea() {
+    }
+        Scanner scanner = new Scanner(System.in);
+        Materia materia = new Materia("nombrnombreDeMateria", "codigo", "profesorEncargado", new double[]{0.0});
 
+    {
+        System.out.println("Hacer la tarea? (true o false): ");
+        boolean hacerLaTarea = scanner.nextBoolean();
+
+        if (hacerLaTarea) {
+            System.out.println("hizo la tarea, se le sube la nota ");
+
+
+        }else{
+            System.out.println("imposible que no tengas tareas, ya las hiciste?");
+            System.out.println("no hizo la tarea, muy mal ");
+            }
+
+    }
+public void estudiar(){
+        System.out.println("estudiaste, ahora tienes mas iq");
 }
-
-public estudiar();{
-    float cuantoTiempo = sc.nextFloat("Cuanto tiempo estudiar: ");
-    switch
-            case value1;
-                //iq^cuantoTiempo
-}
+    }
 
 
-}
+
 
